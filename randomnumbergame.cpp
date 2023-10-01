@@ -7,7 +7,7 @@ int main()
     srand(static_cast<unsigned int>(time(nullptr)));
     int low_limit = 1;
     int high_limit = 100;
-    int target_key = rand() % (low_limit - high_limit + 1) + low_limit;
+    int target_key = rand() % (high_limit - low_limit + 1) + low_limit;
     int guess;
     int attempt = 0;
     cout << ".........welcome to the random number guess game............" << endl;
